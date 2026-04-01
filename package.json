@@ -1,0 +1,47 @@
+{
+  "name": "vue-otp-code-input",
+  "version": "1.0.0",
+  "description": "Vue 3 OTP/verification code input with auto-focus, paste support, multiple styles, and full keyboard navigation",
+  "type": "module",
+  "main": "./dist/vue-otp-code-input.cjs",
+  "module": "./dist/vue-otp-code-input.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-otp-code-input.mjs",
+      "require": "./dist/vue-otp-code-input.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/vue-otp-code-input.css": "./dist/vue-otp-code-input.css",
+    "./style.css": "./dist/vue-otp-code-input.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue", "vue3", "otp", "otp-input", "verification-code",
+    "pin-input", "code-input", "2fa", "mfa", "auth", "component", "typescript"
+  ],
+  "author": "rstar327",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rstar327/vue-otp-code-input"
+  },
+  "homepage": "https://github.com/rstar327/vue-otp-code-input#readme",
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.5",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3",
+    "vue": "^3.5.31",
+    "vue-tsc": "^3.2.6"
+  }
+}
